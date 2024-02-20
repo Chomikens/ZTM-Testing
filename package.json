@@ -4,7 +4,10 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "jest"
+    "test": "jest --watch *.js"
+  },
+  "@scripts-comments": {
+    "test": "Watch all js filles."
   },
   "repository": {
     "type": "git",
