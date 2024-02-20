@@ -1,0 +1,23 @@
+{
+  "name": "ztm-test",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Chomikens/ZTM-Testing.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Chomikens/ZTM-Testing/issues"
+  },
+  "homepage": "https://github.com/Chomikens/ZTM-Testing#readme",
+  "devDependencies": {
+    "jest": "^29.7.0"
+  }
+}
