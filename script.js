@@ -15,3 +15,4 @@ const databaseSearch = (userInput) => {
 }
 
 
+module.exports = databaseSearch // NODE don't have import and export statement. So we must use Common JS
