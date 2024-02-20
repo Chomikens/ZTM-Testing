@@ -20,7 +20,7 @@ const databaseSearch = (userInput) => {
 
 const databaseSearchWithDependenciesInjection = (userInput, mockBase) => {
     const matches = mockBase.filter(web =>{
-    return web.toLowerCase().includes(userInput.toLowerCase())
+    return web.includes(userInput)
     })
     return matches.length > 3 ? matches.slice(0, 3) : matches
 }
