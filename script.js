@@ -14,5 +14,16 @@ const databaseSearch = (userInput) => {
     return matches.length > 3 ? matches.slice(0, 3) : matches
 }
 
+// In real life we dont have database that we export to test. So we want to mock database and test it in testing env - see second example in script.test.js
 
-module.exports = databaseSearch // NODE don't have import and export statement. So we must use Common JS
+// Second function with dependecies injection - pass database, array,object to function params. 
+
+const databaseSearchWithDependenciesInjection = (userInput, mockBase) => {
+    const matches = mockBase.filter(web =>{
+    return web.toLowerCase().includes(userInput.toLowerCase())
+    })
+    return matches.length > 3 ? matches.slice(0, 3) : matches
+}
+
+
+module.exports = {databaseSearch, databaseSearchWithDependenciesInjection}; // NODE don't have import and export statement. So we must use Common JS
